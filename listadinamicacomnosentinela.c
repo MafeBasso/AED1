@@ -157,8 +157,10 @@ int main () {
                 if(!p) printf("A chave nao existe \n");
                 else {
                     printf("O anterior: ");
-                    if (ant) printf ("%d\n", ant);
-                    else printf("nao existe \n");
+                    if (ant) {
+                        NO* b = ant;
+                        printf ("%d\n", b->chave);
+                    } else printf("nao existe \n");
                     printf("A chave: ");
                     printf ("%d\n", p->chave);
                 }
