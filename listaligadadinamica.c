@@ -184,7 +184,7 @@ int main(){
                 break;
 
             case 4:
-                printf("Digite a chave: " );
+                printf("Digite a chave: ");
                 scanf("%d", &ch);
                 NO* p = buscaSeqOrd (ch, l, &ant);
                 if(!p) printf("A chave nao existe \n");
